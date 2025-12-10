@@ -1,0 +1,217 @@
+<!-- Вставьте этот блок в основную структуру вместо раздела с услугами -->
+<a href="index.html.html">Назад</a>
+<div class="t-container" style="padding: 60px 20px;">
+    <div class="t-section__title t-title t-title_xs t-align_center">
+        <h1>Наши специалисты</h1>
+        <p class="t-descr t-descr_md" style="max-width: 800px; margin: 20px auto;">
+            Врачи высшей категории с многолетним опытом работы. Ежегодно проходят повышение квалификации
+        </p>
+    </div>
+    
+    <!-- Фильтр по специализациям -->
+    <div style="margin: 40px 0; text-align: center;">
+        <div class="specialization-filter">
+            <button class="filter-btn active" data-filter="all">Все врачи</button>
+            <button class="filter-btn" data-filter="pediatric">Педиатры</button>
+            <button class="filter-btn" data-filter="therapy">Терапевты</button>
+            <button class="filter-btn" data-filter="surgery">Хирурги</button>
+            <button class="filter-btn" data-filter="gynecology">Гинекологи</button>
+        </div>
+    </div>
+    
+    <!-- Сетка врачей -->
+    <div class="doctors-grid t-row" id="doctorsContainer">
+        <!-- Врач 1 -->
+        <div class="t-col t-col_4 t-col_md_6 t-col_xs_12 doctor-card" data-category="therapy">
+            <div class="doctor-profile" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); margin-bottom: 30px;">
+                <div class="doctor-photo" style="height: 300px; background: #f2f7fa; position: relative;">
+                    <img src="https://static.tildacdn.ink/tild3339-3365-4661-b036-346262663939/Artboard_1.png" 
+                         alt="Яна Васнецова" 
+                         style="width: 100%; height: 100%; object-fit: cover;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.7), transparent); padding: 20px; color: white;">
+                        <h3 style="margin: 0; font-size: 24px;">Яна Васнецова</h3>
+                        <p style="margin: 5px 0 0; opacity: 0.9;">Врач-терапевт, кардиолог</p>
+                    </div>
+                </div>
+                
+                <div class="doctor-info" style="padding: 25px;">
+                    <div class="doctor-badges" style="display: flex; gap: 10px; margin-bottom: 15px;">
+                        <span style="background: #e3f2fd; color: #009bf2; padding: 5px 10px; border-radius: 15px; font-size: 12px;">Терапия</span>
+                        <span style="background: #f3e5f5; color: #9c27b0; padding: 5px 10px; border-radius: 15px; font-size: 12px;">Кардиология</span>
+                    </div>
+                    
+                    <div class="doctor-stats" style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                        <div style="text-align: center;">
+                            <div style="font-weight: 700; color: #009bf2; font-size: 20px;">18 лет</div>
+                            <div style="font-size: 12px; color: #666;">Опыт работы</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-weight: 700; color: #009bf2; font-size: 20px;">2 500+</div>
+                            <div style="font-size: 12px; color: #666;">Пациентов</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-weight: 700; color: #009bf2; font-size: 20px;">96%</div>
+                            <div style="font-size: 12px; color: #666;">Довольных</div>
+                        </div>
+                    </div>
+                    
+                    <div class="doctor-description">
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 20px;">
+                            Доктор медицинских наук. Специализируется на лечении сердечно-сосудистых заболеваний, 
+                            ведении пациентов с артериальной гипертензией, ишемической болезнью сердца.
+                        </p>
+                    </div>
+                    
+                    <div class="doctor-schedule" style="background: #f9f9f9; padding: 15px; border-radius: 10px; margin-bottom: 20px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <div style="font-weight: 600;">График приема:</div>
+                                <div style="font-size: 14px; color: #666;">Пн, Ср, Пт 9:00-18:00</div>
+                            </div>
+                            <div class="price" style="font-weight: 700; color: #009bf2;">3 000 ₽</div>
+                        </div>
+                    </div>
+                    
+                    <div class="doctor-actions" style="display: flex; gap: 10px;">
+                        <button class="btn-primary" style="flex: 1; background: #009bf2; color: white; border: none; padding: 12px; border-radius: 8px; font-weight: 600; cursor: pointer;">
+                            Записаться
+                        </button>
+                        <button class="btn-secondary" style="flex: 1; background: white; color: #009bf2; border: 2px solid #009bf2; padding: 12px; border-radius: 8px; font-weight: 600; cursor: pointer;">
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Врач 2 (Педиатр) -->
+        <div class="t-col t-col_4 t-col_md_6 t-col_xs_12 doctor-card" data-category="pediatric">
+            <div class="doctor-profile" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); margin-bottom: 30px;">
+                <div class="doctor-photo" style="height: 300px; background: #f2f7fa; position: relative;">
+                    <img src="https://static.tildacdn.ink/tild3763-3930-4335-a231-323034353564/Artboard_5.png" 
+                         alt="Павел Березков" 
+                         style="width: 100%; height: 100%; object-fit: cover;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.7), transparent); padding: 20px; color: white;">
+                        <h3 style="margin: 0; font-size: 24px;">Павел Березков</h3>
+                        <p style="margin: 5px 0 0; opacity: 0.9;">Педиатр, детский хирург</p>
+                    </div>
+                </div>
+                
+                <div class="doctor-info" style="padding: 25px;">
+                    <div class="doctor-badges" style="display: flex; gap: 10px; margin-bottom: 15px;">
+                        <span style="background: #fff3e0; color: #ff9800; padding: 5px 10px; border-radius: 15px; font-size: 12px;">Педиатрия</span>
+                        <span style="background: #e8f5e8; color: #4caf50; padding: 5px 10px; border-radius: 15px; font-size: 12px;">Детская хирургия</span>
+                    </div>
+                    
+                    <div class="doctor-description">
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 20px;">
+                            Кандидат медицинских наук. Специализируется на лечении детей от 0 до 18 лет. 
+                            Владеет современными методиками малоинвазивной хирургии.
+                        </p>
+                    </div>
+                    
+                    <div class="doctor-education" style="background: #f0f9ff; padding: 15px; border-radius: 10px; margin-bottom: 20px;">
+                        <div style="font-weight: 600; margin-bottom: 10px;">Образование:</div>
+                        <ul style="margin: 0; padding-left: 20px; font-size: 14px;">
+                            <li>РНИМУ им. Н.И. Пирогова</li>
+                            <li>Ординатура по детской хирургии</li>
+                            <li>Курсы повышения квалификации (2023)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="doctor-actions" style="display: flex; gap: 10px;">
+                        <button class="btn-primary" style="flex: 1; background: #009bf2; color: white; border: none; padding: 12px; border-radius: 8px; font-weight: 600; cursor: pointer;">
+                            Записаться
+                        </button>
+                        <button class="btn-secondary" style="flex: 1; background: white; color: #009bf2; border: 2px solid #009bf2; padding: 12px; border-radius: 8px; font-weight: 600; cursor: pointer;">
+                            Отзывы (24)
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Добавьте больше врачей по аналогии -->
+    </div>
+    
+    <!-- Кнопка "Показать всех" -->
+    <div style="text-align: center; margin-top: 40px;">
+        <button style="background: transparent; color: #009bf2; border: 2px solid #009bf2; padding: 15px 40px; border-radius: 25px; font-size: 16px; font-weight: 600; cursor: pointer;">
+            Показать всех врачей
+        </button>
+    </div>
+</div>
+
+<style>
+    .specialization-filter {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+    
+    .filter-btn {
+        padding: 10px 20px;
+        border: 2px solid #009bf2;
+        background: white;
+        color: #009bf2;
+        border-radius: 25px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+    
+    .filter-btn.active,
+    .filter-btn:hover {
+        background: #009bf2;
+        color: white;
+    }
+    
+    .doctor-card {
+        transition: transform 0.3s ease;
+    }
+    
+    .doctor-card:hover {
+        transform: translateY(-5px);
+    }
+    
+    @media (max-width: 768px) {
+        .specialization-filter {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .filter-btn {
+            width: 100%;
+            max-width: 300px;
+        }
+    }
+</style>
+
+<script>
+    // Фильтрация врачей
+    document.querySelectorAll('.filter-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            // Убираем активный класс у всех кнопок
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Добавляем активный класс текущей кнопке
+            this.classList.add('active');
+            
+            // Получаем фильтр
+            const filter = this.dataset.filter;
+            
+            // Показываем/скрываем врачей
+            document.querySelectorAll('.doctor-card').forEach(card => {
+                if (filter === 'all' || card.dataset.category === filter) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>

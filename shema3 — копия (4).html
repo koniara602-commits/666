@@ -1,0 +1,360 @@
+<a href="index.html.html">Назад</a>
+<div class="t-container" style="padding: 60px 20px;">
+    <div class="t-section__title t-title t-title_xs t-align_center">
+        <h1>Прайс-лист на медицинские услуги</h1>
+        <p class="t-descr t-descr_md" style="max-width: 800px; margin: 20px auto; color: #666;">
+            Актуальные цены на <span id="currentDate"></span>. Окончательная стоимость определяется 
+            после консультации с врачом. Возможна оплата страховыми компаниями.
+        </p>
+        
+        <div style="background: #f0f9ff; padding: 20px; border-radius: 10px; max-width: 800px; margin: 30px auto;">
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <div style="color: #009bf2; font-size: 24px;">💳</div>
+                <div>
+                    <div style="font-weight: 600;">Принимаем к оплате:</div>
+                    <div style="font-size: 14px; color: #666;">
+                        Наличные, банковские карты, ДМС (АльфаСтрахование, Ренессанс, Ингосстрах), 
+                        рассрочка от Тинькофф Банка
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Поиск по услугам -->
+    <div style="max-width: 600px; margin: 40px auto;">
+        <div style="position: relative;">
+            <input type="text" 
+                   id="priceSearch" 
+                   placeholder="Поиск услуги или врача..." 
+                   style="width: 100%; padding: 15px 50px 15px 20px; border: 2px solid #eaeaea; border-radius: 25px; font-size: 16px;">
+            <div style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); color: #666;">
+                🔍
+            </div>
+        </div>
+    </div>
+    
+    <!-- Таблицы с ценами -->
+    <div class="price-tables">
+        
+        <!-- Консультации -->
+        <div class="price-category" style="margin-bottom: 60px;">
+            <h2 style="color: #009bf2; border-bottom: 2px solid #009bf2; padding-bottom: 10px; margin-bottom: 30px;">
+                Консультации врачей
+            </h2>
+            
+            <div class="price-table" style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr style="background: #f8f9fa;">
+                            <th style="padding: 20px; text-align: left; font-weight: 600;">Услуга</th>
+                            <th style="padding: 20px; text-align: left; font-weight: 600;">Врач</th>
+                            <th style="padding: 20px; text-align: left; font-weight: 600;">Стоимость</th>
+                            <th style="padding: 20px; text-align: center; font-weight: 600;"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid #f0f0f0;">
+                            <td style="padding: 20px;">
+                                <div style="font-weight: 600;">Первичная консультация терапевта</div>
+                                <div style="font-size: 14px; color: #666; margin-top: 5px;">
+                                    Осмотр, сбор анамнеза, назначение обследования
+                                </div>
+                            </td>
+                            <td style="padding: 20px;">
+                                Терапевт
+                            </td>
+                            <td style="padding: 20px;">
+                                <div style="font-weight: 700; color: #009bf2;">2 500 ₽</div>
+                            </td>
+                            <td style="padding: 20px; text-align: center;">
+                                <button class="btn-small" style="background: #009bf2; color: white; border: none; padding: 8px 20px; border-radius: 15px; cursor: pointer;">
+                                    Запись
+                                </button>
+                            </td>
+                        </tr>
+                        
+                        <tr style="border-bottom: 1px solid #f0f0f0;">
+                            <td style="padding: 20px;">
+                                <div style="font-weight: 600;">Повторная консультация терапевта</div>
+                                <div style="font-size: 14px; color: #666; margin-top: 5px;">
+                                    В течение 30 дней после первичного приема
+                                </div>
+                            </td>
+                            <td style="padding: 20px;">
+                                Терапевт
+                            </td>
+                            <td style="padding: 20px;">
+                                <div style="font-weight: 700; color: #009bf2;">1 800 ₽</div>
+                            </td>
+                            <td style="padding: 20px; text-align: center;">
+                                <button class="btn-small" style="background: #009bf2; color: white; border: none; padding: 8px 20px; border-radius: 15px; cursor: pointer;">
+                                    Запись
+                                </button>
+                            </td>
+                        </tr>
+                        
+                        <tr style="border-bottom: 1px solid #f0f0f0;">
+                            <td style="padding: 20px;">
+                                <div style="font-weight: 600;">Консультация кардиолога</div>
+                                <div style="font-size: 14px; color: #666; margin-top: 5px;">
+                                    С расшифровкой ЭКГ
+                                </div>
+                            </td>
+                            <td style="padding: 20px;">
+                                Кардиолог
+                            </td>
+                            <td style="padding: 20px;">
+                                <div style="font-weight: 700; color: #009bf2;">3 000 ₽</div>
+                            </td>
+                            <td style="padding: 20px; text-align: center;">
+                                <button class="btn-small" style="background: #009bf2; color: white; border: none; padding: 8px 20px; border-radius: 15px; cursor: pointer;">
+                                    Запись
+                                </button>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td style="padding: 20px;">
+                                <div style="font-weight: 600;">Консультация педиатра</div>
+                                <div style="font-size: 14px; color: #666; margin-top: 5px;">
+                                    Осмотр ребенка до 18 лет
+                                </div>
+                            </td>
+                            <td style="padding: 20px;">
+                                Педиатр
+                            </td>
+                            <td style="padding: 20px;">
+                                <div style="font-weight: 700; color: #009bf2;">2 800 ₽</div>
+                                <div style="font-size: 12px; color: #666;">выезд на дом: +1 500 ₽</div>
+                            </td>
+                            <td style="padding: 20px; text-align: center;">
+                                <button class="btn-small" style="background: #009bf2; color: white; border: none; padding: 8px 20px; border-radius: 15px; cursor: pointer;">
+                                    Запись
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Диагностика -->
+        <div class="price-category" style="margin-bottom: 60px;">
+            <h2 style="color: #009bf2; border-bottom: 2px solid #009bf2; padding-bottom: 10px; margin-bottom: 30px;">
+                Диагностические исследования
+            </h2>
+            
+            <div class="t-row">
+                <!-- УЗИ -->
+                <div class="t-col t-col_6 t-col_md_12">
+                    <div style="background: white; border-radius: 10px; padding: 25px; margin-bottom: 30px; height: 100%; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                        <h3 style="color: #009bf2; margin-top: 0;">Ультразвуковые исследования</h3>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                <span>УЗИ органов брюшной полости</span>
+                                <span style="font-weight: 600;">2 800 ₽</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                <span>УЗИ почек и надпочечников</span>
+                                <span style="font-weight: 600;">2 200 ₽</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                <span>УЗИ сердца (ЭхоКГ)</span>
+                                <span style="font-weight: 600;">3 500 ₽</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                <span>УЗИ сосудов шеи</span>
+                                <span style="font-weight: 600;">2 500 ₽</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <span>УЗИ суставов</span>
+                                <span style="font-weight: 600;">2 000 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Анализы -->
+                <div class="t-col t-col_6 t-col_md_12">
+                    <div style="background: white; border-radius: 10px; padding: 25px; margin-bottom: 30px; height: 100%; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                        <h3 style="color: #009bf2; margin-top: 0;">Лабораторные анализы</h3>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                <span>Общий анализ крови</span>
+                                <span style="font-weight: 600;">500 ₽</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                <span>Биохимический анализ (базовый)</span>
+                                <span style="font-weight: 600;">1 200 ₽</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                <span>Гормональный профиль</span>
+                                <span style="font-weight: 600;">от 800 ₽</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                <span>Анализ на COVID-19</span>
+                                <span style="font-weight: 600;">1 500 ₽</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <span>Забор крови из вены</span>
+                                <span style="font-weight: 600;">300 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Акции -->
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; border-radius: 15px; margin: 60px 0;">
+            <div class="t-row">
+                <div class="t-col t-col_8">
+                    <h2 style="color: white; margin-top: 0;">Специальные предложения</h2>
+                    <p>Экономьте на комплексном обследовании с нашими пакетными предложениями</p>
+                </div>
+                <div class="t-col t-col_4" style="text-align: right;">
+                    <div style="background: white; color: #764ba2; padding: 10px 20px; border-radius: 10px; display: inline-block;">
+                        <div style="font-size: 12px; opacity: 0.8;">Экономия до</div>
+                        <div style="font-size: 32px; font-weight: 700;">25%</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="t-row" style="margin-top: 30px;">
+                <div class="t-col t-col_4 t-col_md_12">
+                    <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+                        <h3 style="color: white; font-size: 18px;">Check-up "Здоровое сердце"</h3>
+                        <div style="font-size: 14px; opacity: 0.9; margin: 10px 0;">
+                            Консультация кардиолога + ЭКГ + ЭхоКГ + анализы
+                        </div>
+                        <div>
+                            <span style="font-size: 24px; font-weight: 700;">12 900 ₽</span>
+                            <span style="text-decoration: line-through; margin-left: 10px; opacity: 0.7;">16 500 ₽</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="t-col t-col_4 t-col_md_12">
+                    <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+                        <h3 style="color: white; font-size: 18px;">Женское здоровье</h3>
+                        <div style="font-size: 14px; opacity: 0.9; margin: 10px 0;">
+                            Консультация гинеколога + УЗИ + анализы
+                        </div>
+                        <div>
+                            <span style="font-size: 24px; font-weight: 700;">8 900 ₽</span>
+                            <span style="text-decoration: line-through; margin-left: 10px; opacity: 0.7;">11 200 ₽</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="t-col t-col_4 t-col_md_12">
+                    <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+                        <h3 style="color: white; font-size: 18px;">Детский комплекс</h3>
+                        <div style="font-size: 14px; opacity: 0.9; margin: 10px 0;">
+                            Педиатр + анализы + УЗИ брюшной полости
+                        </div>
+                        <div>
+                            <span style="font-size: 24px; font-weight: 700;">6 500 ₽</span>
+                            <span style="text-decoration: line-through; margin-left: 10px; opacity: 0.7;">8 100 ₽</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Примечания -->
+        <div style="background: #f8f9fa; padding: 30px; border-radius: 10px; margin-top: 60px;">
+            <h3 style="margin-top: 0;">Важная информация</h3>
+            <div class="t-row">
+                <div class="t-col t-col_6 t-col_md_12">
+                    <ul>
+                        <li>Цены указаны в рублях и включают НДС</li>
+                        <li>Окончательная стоимость может меняться в зависимости от сложности случая</li>
+                        <li>Возможны дополнительные расходы на медикаменты и расходные материалы</li>
+                    </ul>
+                </div>
+                <div class="t-col t-col_6 t-col_md_12">
+                    <ul>
+                        <li>Для льготных категорий граждан предусмотрены скидки</li>
+                        <li>Действует система накопительных скидок</li>
+                        <li>Цены не являются публичной офертой</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div style="background: white; padding: 20px; border-radius: 10px; margin-top: 20px;">
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <div style="font-size: 24px;">📞</div>
+                    <div>
+                        <div style="font-weight: 600;">Нужна консультация по стоимости?</div>
+                        <div>Позвоните нам: <a href="tel:+74951234567" style="color: #009bf2; font-weight: 600;">+7 (495) 123-45-67</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .btn-small {
+        transition: all 0.3s ease;
+    }
+    
+    .btn-small:hover {
+        background: #007acc !important;
+        transform: translateY(-2px);
+    }
+    
+    .price-table tbody tr:hover {
+        background: #f8f9fa;
+    }
+    
+    @media (max-width: 768px) {
+        .price-table {
+            overflow-x: auto;
+        }
+        
+        .price-table table {
+            min-width: 600px;
+        }
+    }
+</style>
+
+<script>
+    // Устанавливаем текущую дату
+    document.getElementById('currentDate').textContent = new Date().toLocaleDateString('ru-RU', {
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric'
+    });
+    
+    // Поиск по услугам
+    document.getElementById('priceSearch').addEventListener('input', function(e) {
+        const searchTerm = e.target.value.toLowerCase();
+        const rows = document.querySelectorAll('.price-table tbody tr');
+        
+        rows.forEach(row => {
+            const text = row.textContent.toLowerCase();
+            if (text.includes(searchTerm)) {
+                row.style.display = '';
+            } else {
+                row.style.display = 'none';
+            }
+        });
+    });
+    
+    // Обработка кнопок записи
+    document.querySelectorAll('.btn-small').forEach(button => {
+        button.addEventListener('click', function() {
+            const serviceRow = this.closest('tr');
+            const serviceName = serviceRow.querySelector('td:first-child div:first-child').textContent;
+            const price = serviceRow.querySelector('td:nth-child(3) div').textContent;
+            
+            alert(`Запись на услугу: ${serviceName}\nСтоимость: ${price}\n\nМы переадресуем вас на страницу записи.`);
+            // window.location.href = '/appointment?service=' + encodeURIComponent(serviceName);
+        });
+    });
+</script>
